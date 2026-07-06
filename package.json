@@ -1,0 +1,14 @@
+{
+  "name": "takeshita-hiroki-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture:works": "node scripts/capture-works.mjs",
+    "serve": "npx serve ."
+  },
+  "devDependencies": {
+    "playwright": "latest",
+    "serve": "latest"
+  }
+}
