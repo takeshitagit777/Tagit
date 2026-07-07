@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/validate-site.mjs",
+    "build": "node scripts/build-static.mjs",
     "capture:works": "node scripts/capture-works.mjs",
     "serve": "npx serve ."
   },

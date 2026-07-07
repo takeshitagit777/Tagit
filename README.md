@@ -32,3 +32,7 @@ assets/works/chotgpt.png
 ```
 
 外部URLにアクセスできない環境では画像生成に失敗します。その場合は、ネットワーク接続がある環境で上記コマンドを実行してください。
+
+## Vercel
+
+`npm run build` は静的ファイルを `public/` に出力します。Vercel の Output Directory が `public` のままでデプロイできます。
