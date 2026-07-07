@@ -7,7 +7,7 @@ export const works = [
     lead: '地域の自動車整備工場向けに、信頼感と問い合わせ導線を重視して制作したサービスサイト。',
     tags: ['Webサイト', 'サービスサイト', '自動車整備'],
     githubUrl: 'https://github.com/takeshitagit777/saga-chuo-motors',
-    liveUrl: 'https://saga-chuo-motors-2ydwwmhi1-vercel-s-projects1.vercel.app/#top',
+    liveUrl: 'https://saga-chuo-motors.vercel.app/',
     featured: true
   },
   {
@@ -26,10 +26,10 @@ export const works = [
     title: 'トレマチ',
     repo: 'takeshitagit777/toremachi',
     category: 'Webサービス',
-    lead: 'トレカのマッチングをテーマにした、コレクター同士をつなぐサービス。',
+    lead: 'トレカのマッチングサービスとして、コレクター同士の交換・売買をつなぐ体験を設計。',
     tags: ['Webサービス', 'マッチング', 'トレカ'],
     githubUrl: 'https://github.com/takeshitagit777/toremachi',
-    liveUrl: '',
+    liveUrl: 'https://toremachi.vercel.app/',
     featured: true
   },
   {
@@ -40,7 +40,7 @@ export const works = [
     lead: '佐賀の農業法人を想定し、地域性とテクノロジー感を組み合わせたコーポレートサイト。',
     tags: ['Webサイト', '農業', '地域'],
     githubUrl: 'https://github.com/takeshitagit777/saga-AgriTech',
-    liveUrl: '',
+    liveUrl: 'https://saga-agri-tech.vercel.app/',
     featured: true
   },
   {
@@ -62,7 +62,8 @@ export const works = [
     lead: '保険営業・ライフプラン相談を想定した、信頼感と相談導線を重視したページ。',
     tags: ['LP', '保険', '営業'],
     githubUrl: 'https://github.com/takeshitagit777/hoken',
-    liveUrl: '',
+    liveUrl: 'https://hoken-teal.vercel.app/',
+    captureDelayMs: 7000,
     featured: false
   },
   {
@@ -73,7 +74,7 @@ export const works = [
     lead: '町工場・製造業向けに、技術力と誠実さが伝わるよう設計したコーポレートサイト。',
     tags: ['Webサイト', '製造業', 'BtoB'],
     githubUrl: 'https://github.com/takeshitagit777/seiko-manufacturing',
-    liveUrl: '',
+    liveUrl: 'https://seiko-manufacturing.vercel.app/',
     featured: false
   },
   {
@@ -133,13 +134,13 @@ export const works = [
   },
   {
     slug: 'chotgpt',
-    title: 'chotGPT',
+    title: 'ChotGPT',
     repo: 'takeshitagit777/chotGPT',
     category: 'AI/実験',
-    lead: 'AIチャット体験やUI検証を目的にしたプロトタイプ。',
+    lead: '気軽に話しかけられるAIチャットサービスのランディングページ。',
     tags: ['AI', 'プロトタイプ', '実験'],
     githubUrl: 'https://github.com/takeshitagit777/chotGPT',
-    liveUrl: '',
+    liveUrl: 'https://www.chotchotgpt.com/',
     featured: false
   },
   {

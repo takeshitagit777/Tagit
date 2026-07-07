@@ -14,21 +14,29 @@ fs.mkdirSync(outputDir, { recursive: true });
 const targets = works.filter((work) => work.liveUrl && work.liveUrl.startsWith('http'));
 
 if (targets.length === 0) {
-  console.log('撮影対象のliveUrlがありません。assets/js/works.mjs の liveUrl を入力してください。');
+  console.log('撮影対象の liveUrl がありません。assets/js/works.mjs の liveUrl を入力してください。');
   process.exit(0);
 }
 
 const browser = await chromium.launch({ headless: true });
 const page = await browser.newPage({
-  viewport: { width: 1440, height: 1000 },
+  viewport: { width: 1440, height: 900 },
   deviceScaleFactor: 1
 });
+await page.emulateMedia({ reducedMotion: 'reduce' });
 
 for (const work of targets) {
   const outputPath = path.join(outputDir, `${work.slug}.png`);
   try {
     console.log(`撮影中: ${work.title} / ${work.liveUrl}`);
-    await page.goto(work.liveUrl, { waitUntil: 'networkidle', timeout: 90000 });
+    await page.goto(work.liveUrl, { waitUntil: 'domcontentloaded', timeout: 90000 });
+    await page.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
+    await page.evaluate(() => document.fonts?.ready).catch(() => {});
+    await page.waitForTimeout(work.captureDelayMs ?? 3200);
+    await page.locator('body').evaluate((body) => {
+      body.style.scrollBehavior = 'auto';
+      window.scrollTo(0, 0);
+    });
     await page.screenshot({ path: outputPath, fullPage: false });
     console.log(`保存しました: assets/works/${work.slug}.png`);
   } catch (error) {

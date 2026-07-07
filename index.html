@@ -122,11 +122,11 @@ section{position:relative;z-index:2}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
 .card{background:var(--paper);border:1px solid var(--line-soft);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s;will-change:transform}
 .card:hover{transform:translateY(-8px);box-shadow:0 28px 46px -26px var(--shadow);border-color:var(--line)}
-.thumb{display:block;aspect-ratio:16/10.5;position:relative;overflow:hidden;background:#12202b}
+.thumb{display:block;aspect-ratio:16/10;position:relative;overflow:hidden;background:#12202b}
 .thumb .art,.thumb img.photo{position:absolute;inset:0;width:100%;height:100%;transition:transform .8s var(--ease)}
-.thumb img.photo{object-fit:cover}
+.thumb img.photo{object-fit:cover;object-position:top center}
 .card:hover .thumb .art,.card:hover .thumb img.photo{transform:scale(1.06)}
-.thumb .shade{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(14,20,26,.12) 0%,rgba(14,20,26,.5) 100%)}
+.thumb .shade{position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(14,20,26,.38) 0%,rgba(14,20,26,.08) 38%,rgba(14,20,26,.44) 100%)}
 .thumb .label{position:absolute;left:14px;top:13px;z-index:3;font-family:var(--serif);color:#fff;font-size:16px;font-weight:600;line-height:1.4;letter-spacing:.04em;text-shadow:0 2px 12px rgba(0,0,0,.5);max-width:74%}
 .thumb .repo{position:absolute;right:12px;bottom:11px;z-index:3;font-family:var(--latin);font-size:12px;letter-spacing:.5px;color:rgba(255,255,255,.78);font-style:italic;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 .card-body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:14px;flex:1}
@@ -422,14 +422,14 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line-soft);margin-top:60px
 
 <script>
 const GH="https://github.com/takeshitagit777/";
-const P=n=>`https://images.unsplash.com/${n}?w=760&q=70&auto=format&fit=crop`;
+const W=slug=>`./assets/works/${slug}.png`;
 const projects=[
-  {repo:"saga-chuo-motors",url:"https://saga-chuo-motors.vercel.app",title:"整備工場のサービスサイト",tags:["Webサイト","企業サイト"],desc:"地域の整備工場の信頼性と専門性を伝えるコーポレートサイト。",img:P("photo-1643700973089-baa86a1ab9ee")},
-  {repo:"saga-AgriTech",url:"https://saga-agri-tech.vercel.app",title:"農業法人コーポレートサイト",tags:["Webサイト","企業サイト"],desc:"自然と人をつなぐ理念を、やさしいUIで表現したサイト。",img:P("photo-1666070629170-0a2460a0c726")},
-  {repo:"seiko-manufacturing",url:"https://seiko-manufacturing.vercel.app",title:"製造業コーポレートサイト",tags:["Webサイト","企業サイト"],desc:"確かな技術を、まっすぐ伝える製造業のブランドサイト。",img:P("photo-1486262715619-67b85e0b08d3")},
-  {repo:"hoken",url:"https://hoken-teal.vercel.app",title:"保険相談サービス",tags:["Webサイト","業務支援"],desc:"複雑な保険選びを、わかりやすく整理する相談サイト。",img:P("photo-1769740333462-9a63bfa914bc")},
-  {repo:"toremachi",url:"https://toremachi.vercel.app",title:"トレカマッチングサービス",tags:["Webサービス","マッチング"],desc:"トレーディングカードの売買を、もっと安全に、もっと楽しく。",art:"art-c",deco:"orb",glyph:"札"},
-  {repo:"chotGPT",url:"https://www.chotchotgpt.com",title:"chotGPT ランディングページ",tags:["Webアプリ","AI"],desc:"気軽に話しかけられる、AIチャットサービスのLP。",art:"art-c",deco:"orb",glyph:"話"},
+  {repo:"saga-chuo-motors",url:"https://saga-chuo-motors.vercel.app",title:"整備工場のサービスサイト",tags:["Webサイト","企業サイト"],desc:"地域の整備工場の信頼性と専門性を伝えるコーポレートサイト。",img:W("saga-chuo-motors")},
+  {repo:"saga-AgriTech",url:"https://saga-agri-tech.vercel.app",title:"農業法人コーポレートサイト",tags:["Webサイト","企業サイト"],desc:"自然と人をつなぐ理念を、やさしいUIで表現したサイト。",img:W("saga-agritech")},
+  {repo:"seiko-manufacturing",url:"https://seiko-manufacturing.vercel.app",title:"製造業コーポレートサイト",tags:["Webサイト","企業サイト"],desc:"確かな技術を、まっすぐ伝える製造業のブランドサイト。",img:W("seiko-manufacturing")},
+  {repo:"hoken",url:"https://hoken-teal.vercel.app",title:"保険相談サービス",tags:["Webサイト","業務支援"],desc:"複雑な保険選びを、わかりやすく整理する相談サイト。",img:W("hoken")},
+  {repo:"toremachi",url:"https://toremachi.vercel.app",title:"トレカマッチングサービス",tags:["Webサービス","マッチング"],desc:"トレカのマッチングサービスとして、コレクター同士の交換・売買をつなぎます。",img:W("toremachi")},
+  {repo:"chotGPT",url:"https://www.chotchotgpt.com",title:"ChotGPT ランディングページ",tags:["Webアプリ","AI"],desc:"気軽に話しかけられる、AIチャットサービスのLP。",img:W("chotgpt")},
   {repo:"Tagit",url:"https://tagit-six.vercel.app",title:"Tagit",tags:["アプリ","生産性"],desc:"タグで整理する、軽やかなタスク管理アプリ。",art:"art-d",deco:"lines",glyph:"整"},
   {repo:"Ripical",url:"https://ripical.vercel.app",title:"Ripical",tags:["Webアプリ","ツール"],desc:"日々の記録をリズムに変える、習慣化サポートツール。",art:"art-b",deco:"lines",glyph:"律"},
   {repo:"tomoshibi",url:"https://tomoshibi-kappa.vercel.app",title:"tomoshibi",tags:["Webサイト","ブランディング"],desc:"灯りをテーマにした、あたたかなブランド体験サイト。",art:"art-f",deco:"orb",glyph:"灯"},
