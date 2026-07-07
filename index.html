@@ -3,7 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>takeshita hiroki — サービスデザイナー / 開発者</title>
+<title>竹下裕貴 | takeshitahiroki - サービスデザイナー・開発者</title>
+<meta name="description" content="竹下裕貴（takeshitahiroki / takeshita hiroki）のポートフォリオサイト。Webサイト制作、UIデザイン、Webアプリ開発、サービス設計を行うサービスデザイナー・開発者です。">
+<meta name="author" content="竹下裕貴">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="takeshitahiroki">
+<meta property="og:title" content="竹下裕貴 | takeshitahiroki - サービスデザイナー・開発者">
+<meta property="og:description" content="竹下裕貴（takeshitahiroki）のポートフォリオ。Webサイト制作、UIデザイン、Webアプリ開発、サービス設計を行っています。">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="竹下裕貴 | takeshitahiroki">
+<meta name="twitter:description" content="竹下裕貴（takeshitahiroki）のポートフォリオサイト。Web制作、UIデザイン、Webアプリ開発、サービス設計。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "竹下裕貴 | takeshitahiroki",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "竹下裕貴",
+    "alternateName": [
+      "takeshitahiroki",
+      "takeshita hiroki",
+      "Takeshita Hiroki"
+    ],
+    "jobTitle": "サービスデザイナー・開発者",
+    "description": "Webサイト制作、UIデザイン、Webアプリ開発、サービス設計を行うサービスデザイナー・開発者。",
+    "sameAs": [
+      "https://github.com/takeshitagit777"
+    ]
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
@@ -251,29 +283,87 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line-soft);margin-top:60px
 .hero .reveal{transition-duration:1.1s}
 
 @media(max-width:980px){
-  .hero-grid{grid-template-columns:1fr;gap:20px}
-  .hero-visual{height:400px;margin-top:20px}
-  .hero-right-note{display:none}
-  .grid{grid-template-columns:repeat(2,1fr)}
-  .case-grid{grid-template-columns:1fr;gap:36px}
-  .cap-grid{grid-template-columns:repeat(2,1fr)}
-  .motion-grid{grid-template-columns:repeat(2,1fr)}
+  .wrap{padding:0 28px}
+  header{padding:18px 0}
+  header.scrolled{padding:12px 0}
+  .nav{gap:16px}
   .nav-links{display:none}
+  .hero{padding:150px 0 76px}
+  .hero-grid{grid-template-columns:1fr;gap:22px}
+  .hero-lead{max-width:620px}
+  .hero-visual{height:clamp(360px,58vw,430px);margin-top:12px}
+  .hero-right-note{display:none}
+  .laptop{right:4%;top:9%;width:min(48vw,320px)}
+  .bonsai-photo{left:1%;bottom:-5%;width:min(48vw,340px)}
+  .phone{right:7%;bottom:2%;width:min(18vw,104px)}
+  .works,.cap,.motion,.profile{padding:76px 0}
+  .case{padding:0 0 76px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .case-grid{grid-template-columns:1fr;gap:36px}
+  .cap-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .motion-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sec-head{align-items:flex-start}
+  .card,.mo,.cap-item,.stat{min-width:0}
 }
 @media(max-width:640px){
-  .wrap{padding:0 22px}
-  .hero{padding:150px 0 60px}
-  .hero-visual{height:340px}
-  .laptop{width:250px}.bonsai-photo{width:250px;height:auto}.phone{width:86px}
-  .grid{grid-template-columns:1fr}
-  .cap-grid{grid-template-columns:1fr}
-  .motion-grid{grid-template-columns:1fr}
+  .wrap{padding:0 20px}
+  .brand{gap:10px;min-width:0}
+  .brand .bar{height:28px}
+  .brand h1{font-size:22px;white-space:nowrap}
+  .brand p{font-size:10px;letter-spacing:1.3px;white-space:nowrap}
+  .theme-btn{width:40px;height:40px}
+  .seal{width:38px;height:38px}
+  .hero{padding:122px 0 54px}
+  .hero h2{font-size:clamp(31px,10vw,44px);line-height:1.38}
+  .hero-lead{margin-top:22px;font-size:14px;line-height:2}
+  .hero-cta{gap:12px;margin-top:30px}
+  .btn{padding:14px 22px;font-size:13px;justify-content:center}
+  .hero-visual{height:clamp(285px,78vw,350px);margin-top:4px}
+  .enso{width:128%;height:128%;right:-16%;top:-14%}
+  .laptop{right:0;top:10%;width:70vw;max-width:278px}
+  .bonsai-photo{left:-11%;bottom:-2%;width:64vw;max-width:270px}
+  .phone{right:1%;bottom:8%;width:23vw;max-width:88px}
+  .scroll-ind{display:none}
+  .works,.cap,.motion,.profile{padding:62px 0}
+  .case{padding:0 0 62px}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:14px;margin-bottom:32px}
+  .sec-title{font-size:clamp(24px,7vw,30px);padding-left:16px}
+  .sec-sub{font-size:13px;line-height:1.9}
+  .see-all{white-space:normal}
+  .grid,.cap-grid,.motion-grid{grid-template-columns:1fr}
+  .card-body{padding:20px}
+  .card-foot{gap:14px}
+  .gh{min-width:0;overflow-wrap:anywhere}
+  .case-visual{border-radius:12px}
+  .case-visual .cv-h{left:18px;right:100px;bottom:58px;font-size:18px}
+  .case-visual .cv-sub,.case-visual .cv-label{left:18px}
+  .case-visual .cv-phone{right:12px;width:96px}
+  .case-info .kicker{align-items:flex-start;flex-direction:column;gap:10px}
+  .stats{grid-template-columns:1fr}
+  .case-meta{gap:24px}
+  .cap-item{padding:28px 22px}
   .pf-grid{grid-template-columns:1fr;gap:24px;text-align:center;justify-items:center}
   .pf-facts{justify-content:center}
-  .stats{grid-template-columns:1fr}
-  .cta-box{padding:44px 30px}
-  .scroll-ind{left:22px}
-  .sec-head{flex-direction:column;align-items:flex-start}
+  .cta{padding:62px 0 28px}
+  .cta-box{padding:36px 24px;border-radius:16px;align-items:flex-start}
+  .cta-box .btn{width:100%}
+  .foot{gap:18px;align-items:flex-start}
+  .foot .links{gap:14px;flex-wrap:wrap}
+}
+@media(max-width:430px){
+  .wrap{padding:0 16px}
+  .brand h1{font-size:19px}
+  .brand p{display:none}
+  .hero{padding-top:108px}
+  .hero-cta .btn{width:100%}
+  .hero-visual{height:270px}
+  .laptop{width:76vw}
+  .bonsai-photo{width:70vw}
+  .phone{width:24vw}
+  .thumb .label{font-size:14px}
+  .case-visual .cv-h{right:24px;bottom:84px}
+  .case-visual .cv-phone{opacity:.72;transform:scale(.86);transform-origin:right bottom}
+  .cta-box h3{font-size:24px}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
@@ -287,7 +377,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line-soft);margin-top:60px
   <div class="wrap nav">
     <div class="brand">
       <span class="bar"></span>
-      <div><h1>takeshita hiroki</h1><p>サービスデザイナー / 開発者</p></div>
+      <div><h1>竹下裕貴</h1><p>takeshitahiroki / サービスデザイナー・開発者</p></div>
     </div>
     <nav class="nav-links">
       <a href="#works">制作実績</a><a href="#cap">できること</a><a href="#profile">プロフィール</a><a href="#motion">動きのアイデア</a><a href="#contact">お問い合わせ</a>
@@ -304,7 +394,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line-soft);margin-top:60px
       <div class="hero-text">
         <div class="hero-seal reveal"><span class="seal"><span>竹下</span></span></div>
         <h2 class="reveal">アプリも、サイトも、<br>体験としてデザインする<span class="dot">。</span></h2>
-        <p class="hero-lead reveal">企画・デザイン・実装まで一貫して行い、<br>ユーザーにとって心地よく、<br>ビジネスに成果をもたらすデジタル体験をつくります。</p>
+        <p class="hero-lead reveal">竹下裕貴（takeshitahiroki）として、企画・デザイン・実装まで一貫して行い、<br>ユーザーにとって心地よく、<br>ビジネスに成果をもたらすデジタル体験をつくります。</p>
         <div class="hero-cta reveal">
           <a href="#works" class="btn btn-primary">制作実績を見る <span class="ar">→</span></a>
           <a href="#contact" class="btn btn-ghost">相談する <span class="ar">💬</span></a>
@@ -391,11 +481,11 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line-soft);margin-top:60px
     <div class="pf-grid reveal">
       <div class="pf-photo"><svg viewBox="0 0 96 96"><circle cx="48" cy="40" r="16" fill="#d9d2c4"/><path d="M20 96 c0-18 12-30 28-30 s28 12 28 30 z" fill="#3c4a54"/><rect x="34" y="34" width="28" height="10" rx="5" fill="none" stroke="#25313c" stroke-width="1.5"/></svg></div>
       <div class="pf-body">
-        <h3>takeshita hiroki</h3>
+        <h3>竹下裕貴 / takeshitahiroki</h3>
         <div class="role">サービスデザイナー / 開発者</div>
-        <p>実直で、成果につながるデジタル体験をつくります。企画・デザイン・開発まで一貫して手がけ、ユーザーにとって心地よく、ビジネスに成果をもたらすプロダクトを追求しています。</p>
+        <p>竹下裕貴（takeshitahiroki / takeshita hiroki）です。実直で、成果につながるデジタル体験をつくります。企画・デザイン・開発まで一貫して手がけ、ユーザーにとって心地よく、ビジネスに成果をもたらすプロダクトを追求しています。</p>
         <div class="pf-facts">
-          <div class="pf-fact"><h5>名前</h5><p>takeshita hiroki</p></div>
+          <div class="pf-fact"><h5>名前</h5><p>竹下裕貴 / takeshitahiroki</p></div>
           <div class="pf-fact"><h5>拠点</h5><p>福岡県福岡市・佐賀県・長崎県</p></div>
           <div class="pf-fact"><h5>活動</h5><p>フリーランス</p></div>
         </div>
@@ -414,7 +504,7 @@ footer{padding:40px 0 60px;border-top:1px solid var(--line-soft);margin-top:60px
   </div>
   <footer>
     <div class="wrap foot">
-      <div class="copy">© 2025 takeshita hiroki</div>
+      <div class="copy">© 2025 竹下裕貴 / takeshitahiroki</div>
       <div class="links"><a href="#">プライバシーポリシー</a><a href="#">利用規約</a><a href="https://github.com/takeshitagit777" target="_blank" rel="noopener">GitHub</a></div>
     </div>
   </footer>
