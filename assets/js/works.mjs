@@ -1,5 +1,16 @@
 export const works = [
   {
+    slug: 'haru-seikotsuin',
+    title: 'ハル整骨院',
+    repo: 'takeshitagit777/haru-seikotsuin',
+    category: 'Webサイト',
+    lead: '整骨院向けに、信頼感・予約導線・スマホ体験を重視して制作したランディングページ。',
+    tags: ['Webサイト', '医療', '予約導線'],
+    githubUrl: 'https://github.com/takeshitagit777/haru-seikotsuin',
+    liveUrl: 'https://takeshitagit777.github.io/haru-seikotsuin/',
+    featured: true
+  },
+  {
     slug: 'saga-chuo-motors',
     title: '整備工場のサービスサイト',
     repo: 'takeshitagit777/saga-chuo-motors',
